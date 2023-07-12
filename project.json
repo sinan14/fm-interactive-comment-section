@@ -9,14 +9,17 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/fm-interactive-comment-section"
+        "outputPath": "build"
       },
       "configurations": {
         "development": {
           "mode": "development"
         },
         "production": {
-          "mode": "production"
+          "mode": "production",
+          "options": {
+            "baseHref": "/fm-interactive-comment-section"
+          }
         }
       }
     },

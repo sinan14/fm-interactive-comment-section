@@ -1,0 +1,31 @@
+@import './../../../varaibles';
+
+.textBoxStyle {
+  background-color: #fff;
+  display: flex;
+  gap: 1.6rem;
+  margin: 1.6rem 0 3rem;
+  border-radius: 0.8rem;
+  padding: 2.4rem;
+  &.v_line {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -32px;
+      width: 2.5px;
+      height: 140%;
+      background-color: $Light-gray;
+    }
+    &:last-child &::before {
+      height: 100%;
+    }
+  }
+}
+
+.avatarStyle {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+}

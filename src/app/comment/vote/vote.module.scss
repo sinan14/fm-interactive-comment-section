@@ -1,0 +1,23 @@
+@import './../../../varaibles';
+.vote_block {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  background-color: $Light-gray;
+  padding: 8px 0;
+  width: 3.2rem;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 9px;
+  gap: 8px;
+  margin-right: 16px;
+}
+
+.control {
+  color: $Light-grayish-blue;
+}
+.count {
+  color: $Moderate-blue;
+  font-size: 14px;
+  font-weight: 700;
+}

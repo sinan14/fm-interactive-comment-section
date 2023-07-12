@@ -1,0 +1,43 @@
+@import './../../varaibles';
+.comment_block {
+  display: flex;
+  background-color: #fff;
+  padding: 24px 24px;
+  border-radius: 9px;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &.v_line {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -32px;
+      width: 2.5px;
+      height: 140%;
+      background-color: $Light-gray;
+    }
+    &:last-child {
+      &::before {
+        height: 100%;
+      }
+    }
+  }
+}
+.comment_text {
+  color: $Grayish-Blue;
+  span {
+    color: $Moderate-blue;
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+}
+
+.main_block {
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+}
+

@@ -1,0 +1,27 @@
+@import "./../../../varaibles";
+
+.textAreaStyle {
+    flex: 1 0 77%;
+    line-height: normal;
+    padding: 1.2rem;
+    border: 2px solid $Light-gray;
+    border-radius: 3px;
+    resize: none;
+    overflow-y: auto;
+    min-height: 96px;
+    flex-grow: 1;
+   
+
+    
+    &::placeholder{
+      color: $Grayish-Blue;
+      font-weight: 500;
+    }
+    &:focus {
+      outline: none;
+      border:1px solid $Moderate-blue;
+      border-radius: 6px; 
+      cursor: pointer;
+      
+    }
+  }

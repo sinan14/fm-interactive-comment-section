@@ -1,0 +1,37 @@
+@import './../../varaibles';
+.popup {
+  padding: 2rem;
+  width: 27.5rem;
+
+  h1 {
+    color: $Dark-blue;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+    font-size: 1.8rem;
+  }
+  p {
+    color: $Grayish-Blue;
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
+  }
+  button {
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.4rem;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .btn_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .btn_cancel {
+    background-color: $Dark-blue;
+  }
+  .btn_del {
+    background-color: $Soft-Red;
+  }
+}

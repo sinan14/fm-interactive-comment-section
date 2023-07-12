@@ -1,0 +1,49 @@
+@import "../../varaibles";
+.user_block {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    .user_img {
+      height: 3rem;
+    }
+    .user_name {
+      color: $Dark-blue;
+      font-weight: 700;
+    }
+    .reply_time {
+      color: $Grayish-Blue;
+    }
+    .my_name {
+      background-color: $Moderate-blue;
+      padding: 0.4rem 1rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #fff;
+      border-radius: 0.2rem;
+    }
+    .reply_icon_box {
+      margin-left: auto;
+      img {
+        margin-right: 6px;
+      }
+      span {
+        color: $Moderate-blue;
+        font-weight: 700;
+        font-size: 14px;
+      }
+    }
+    .del__edit-box {
+      display: flex;
+      gap: 1.6rem;
+      span {
+        display: flex;
+        align-items: baseline;
+        &:hover {
+          cursor: pointer;
+          opacity: 66%;
+        }
+      }
+    }
+  }

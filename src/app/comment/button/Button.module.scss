@@ -1,0 +1,15 @@
+.btnStyle {
+    background-color: hsl(238, 40%, 52%);
+    color: #fff;
+    padding: 1.4rem 2.4rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0.6rem;
+    align-self: flex-start;
+    border: none;
+    &:hover{
+      opacity: 60%;
+      cursor: pointer;
+    }
+  }
