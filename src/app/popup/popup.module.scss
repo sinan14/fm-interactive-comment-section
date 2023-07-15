@@ -1,27 +1,43 @@
-@import './../../varaibles';
+@import './../../sass/varaibles';
+@import "../../sass/mixins";
 .popup {
   padding: 2rem;
   width: 27.5rem;
+  @include respond(phone){
+    width: 100%;
+    padding: 1.8rem;
+  }
 
   h1 {
     color: $Dark-blue;
     font-weight: 700;
     margin-bottom: 1.6rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    @include respond(phone){
+      font-size: 2rem;
+    }
   }
   p {
     color: $Grayish-Blue;
     font-size: 1.5rem;
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.8rem;
+    line-height: 1.3;
+    @include respond(phone){
+      line-height: 1.6;
+    }
   }
   button {
     text-transform: uppercase;
     border: none;
     border-radius: 0.4rem;
     color: #fff;
-    padding: 1rem 2rem;
+    padding: 1.2rem 2rem;
     font-size: 1.2rem;
     font-weight: 700;
+    @include respond(phone){
+      padding: 1.6rem 2rem;
+      font-size: 1.5rem;
+    }
   }
   .btn_block {
     display: flex;
@@ -29,7 +45,7 @@
     justify-content: space-between;
   }
   .btn_cancel {
-    background-color: $Dark-blue;
+    background-color: $Grayish-Blue;
   }
   .btn_del {
     background-color: $Soft-Red;

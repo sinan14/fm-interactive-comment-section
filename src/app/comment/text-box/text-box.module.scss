@@ -1,4 +1,5 @@
-@import './../../../varaibles';
+@import './../../../sass/varaibles';
+@import '../../../sass/mixins';
 
 .textBoxStyle {
   background-color: #fff;
@@ -7,16 +8,25 @@
   margin: 1.6rem 0 3rem;
   border-radius: 0.8rem;
   padding: 2.4rem;
+  @include respond(phone){
+    position: relative;
+    margin-bottom: 9rem;
+  }
   &.v_line {
     position: relative;
     &::before {
       content: '';
       position: absolute;
       top: 0;
-      left: -32px;
+      left: -6%;
       width: 2.5px;
       height: 140%;
       background-color: $Light-gray;
+      @include respond(phone){
+        height: 110%;
+        left: -6%;
+
+      }
     }
     &:last-child &::before {
       height: 100%;
@@ -28,4 +38,9 @@
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 50%;
+  @include respond(phone){
+    position: absolute;
+    bottom: -48px;
+
+  }
 }

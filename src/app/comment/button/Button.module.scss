@@ -1,5 +1,7 @@
+@import '../../../sass/varaibles';
+@import '../../../sass/mixins';
 .btnStyle {
-    background-color: hsl(238, 40%, 52%);
+    background-color: $Moderate-blue;
     color: #fff;
     padding: 1.4rem 2.4rem;
     font-size: 1.2rem;
@@ -11,5 +13,14 @@
     &:hover{
       opacity: 60%;
       cursor: pointer;
+    }
+    &.mob_cmnt_btn{
+      @include respond(phone){
+        position: absolute;
+        bottom: -48px;
+        right: 20px;
+        padding: 1.5rem 3rem;
+    
+      }
     }
   }

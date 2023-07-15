@@ -1,4 +1,5 @@
-@import "../../varaibles";
+@import "../../sass/varaibles";
+@import "../../sass/mixins";
 .user_block {
     display: flex;
     align-items: center;
@@ -32,6 +33,11 @@
         color: $Moderate-blue;
         font-weight: 700;
         font-size: 14px;
+      }
+      @include respond(phone) {
+        position: absolute;
+        bottom: 8%;
+        right: 8%;
       }
     }
     .del__edit-box {

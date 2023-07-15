@@ -1,10 +1,17 @@
-@import './../../varaibles';
+@import './../../sass/varaibles';
+@import "../../sass/mixins";
 .comment_block {
   display: flex;
   background-color: #fff;
   padding: 24px 24px;
   border-radius: 9px;
   align-items: center;
+  position: relative;
+
+  @include respond(phone){
+    padding-bottom: 48px;
+    margin: 0 1.2rem 0;
+  }
   &:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -14,10 +21,15 @@
       content: '';
       position: absolute;
       top: 0;
-      left: -32px;
+      left: -6%;
       width: 2.5px;
       height: 140%;
       background-color: $Light-gray;
+      @include respond(phone){
+        height: 110%;
+        left: -6%;
+
+      }
     }
     &:last-child {
       &::before {

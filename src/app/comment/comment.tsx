@@ -6,13 +6,13 @@ import classes from './comment.module.scss';
 import { EditComment } from './edit-comment/EditComment';
 import { TextBox } from './text-box/Text-box';
 import { Vote } from './vote/vote';
-
-export const Comment = (props: {
+interface propType {
   comment: CommentObj;
   myData: User;
   level: number;
   onClickDelete: () => void;
-}) => {
+}
+export const Comment = (props: propType) => {
   const { content, createdAt, score, replies, replyingTo } =
     props?.comment || {};
 
@@ -35,7 +35,11 @@ export const Comment = (props: {
           props.level ? classes.v_line : null
         }`}
         style={{
-          marginLeft: `${props.level ? props.level * 8 + 'rem' : null}`,
+          marginLeft: `${
+            props.level
+              ? props.level * (window.outerWidth > 600 ? 8 : 3.2) + 'rem'
+              : null
+          }`,
         }}
       >
         <Vote score={score} />

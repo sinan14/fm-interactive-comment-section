@@ -26,7 +26,7 @@ export function TextBox(props: any) {
         placeHolderText="Add a comment ..."
         onTextInput={handleNewComment}
       />
-      <Buttton onBtnClick={onBtnClick} btnType={props.btnType} />
+      <Buttton classname='mob_cmnt_btn' onBtnClick={onBtnClick} btnType={props.btnType} />
     </div>
   );
 }
